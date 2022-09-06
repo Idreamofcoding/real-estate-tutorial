@@ -10,6 +10,7 @@ import Category from './pages/Category'
 import SignIn from './pages/SignIn'
 import Listing from './pages/Listing'
 import SignUp from './pages/SignUp'
+import Contact from './pages/Contact'
 import ForgotPassword from './pages/ForgotPassword'
 import CreateListing from './pages/CreateListing'
 import { Slide, Zoom, Flip, Bounce } from 'react-toastify';
@@ -31,6 +32,7 @@ function App() {
           <Route path='/forgot-password' element={<ForgotPassword />} />
           <Route path='/create-listing' element={<CreateListing />} />
           <Route path='/category/:categoryName/:listingId' element={<Listing />} />
+          <Route path='/contact/:landlordId' element={<Contact />} />
         </Routes>
         <Navbar />
       </Router>
